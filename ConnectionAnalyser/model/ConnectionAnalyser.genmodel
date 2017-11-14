@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/ConnectionAnalyser/src" editorDirectory="/ConnectionAnalyser.editor/src"
+    modelPluginID="ConnectionAnalyser" modelName="ConnectionAnalyser" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    editorPluginID="ConnectionAnalyser.editor" operationReflection="true" importOrganizing="true">
+  <foreignModel>ConnectionAnalyser.ecore</foreignModel>
+  <genPackages prefix="ConnectionAnalyser" basePackage="com.airbus.conanalyser.model"
+      disposableProviderFactory="true" ecorePackage="ConnectionAnalyser.ecore#/">
+    <genDataTypes ecoreDataType="ConnectionAnalyser.ecore#//Serialisation"/>
+    <genClasses ecoreClass="ConnectionAnalyser.ecore#//Model">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConnectionAnalyser.ecore#//Model/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConnectionAnalyser.ecore#//Model/port"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ConnectionAnalyser.ecore#//Model/fun_out_port"/>
+    </genClasses>
+    <genClasses ecoreClass="ConnectionAnalyser.ecore#//Fun_IN_Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConnectionAnalyser.ecore#//Fun_IN_Port/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConnectionAnalyser.ecore#//Fun_IN_Port/oper"/>
+    </genClasses>
+    <genClasses ecoreClass="ConnectionAnalyser.ecore#//Fun_OUT_Port">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConnectionAnalyser.ecore#//Fun_OUT_Port/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ConnectionAnalyser.ecore#//Fun_OUT_Port/operator"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

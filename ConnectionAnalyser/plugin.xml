@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated ConnectionAnalyser -->
+      <package
+            uri="http://www.example.org/a"
+            class="com.airbus.conanalyser.model.ConnectionAnalyser.ConnectionAnalyserPackage"
+            genModel="model/ConnectionAnalyser.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated base -->
+      <package
+            uri="http://vogella.com/base"
+            class="base.BasePackage"
+            genModel="base.genmodel"/>
+   </extension>
+
+</plugin>
