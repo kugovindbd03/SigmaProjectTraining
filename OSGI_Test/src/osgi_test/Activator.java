@@ -13,7 +13,7 @@ public class Activator implements BundleActivator {
 
 	/*
 	 * (non-Javadoc)
-	 * @see org.osgi..BundleActivator#start(org.osgi.framework.BundleContext)
+	 * @see org.osgi..#start(org.osgi.framework.BundleContext)
 	 */
 	public void start(BundleContext bundleContext) throws Exception {
 		Activator.context = bundleContext;
